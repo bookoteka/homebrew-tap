@@ -9,6 +9,12 @@ cask "bookoteka" do
 
   app "bookoteka.app"
 
+  postflight do
+    system_command "xattr",
+                   args: ["-d", "com.apple.quarantine", "#{appdir}/Bookoteka.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/com.bookoteka.dev",
     "~/Library/Caches/com.bookoteka.dev",
