@@ -1,6 +1,6 @@
 cask "bookoteka" do
   version "1.0.0"
-  sha256 "e9c706402b96153f3c055fb8b544941461657ac6c67bad80cd63c83b1aefad2a"
+  sha256 "b8a89fb47acc26c792dadb882390465ace33d9231718031abe970e02e006bfd9"
 
   url "https://github.com/bookoteka/bookoteka/releases/download/v#{version}/bookoteka_#{version}_aarch64.dmg"
   name "bookoteka"
