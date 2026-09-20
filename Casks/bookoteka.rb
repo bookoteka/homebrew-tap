@@ -11,7 +11,7 @@ cask "bookoteka" do
 
   postflight_steps do
     system_command "xattr",
-                   args: ["-d", "com.apple.quarantine", "#{appdir}/Bookoteka.app"],
+                   args: ["-d", "com.apple.quarantine", "/Applications/Bookoteka.app"],
                    sudo: false
   end
 
